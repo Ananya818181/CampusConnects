@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Organizers - CampusConnects</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 30px 0;
+      }
+
+      .header h1 {
+        color: #2c3e50;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+      }
+
+      .header p {
+        color: #666;
+        font-size: 1.2em;
+      }
+
+      .organizers-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .organizer-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        overflow: hidden;
+      }
+
+      .organizer-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .organizer-header {
+        text-align: center;
+        padding: 20px;
+        background: #4a69bd;
+        color: white;
+      }
+
+      .organizer-logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+
+        padding: 5px;
+      }
+
+      .organizer-name {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .expertise-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      .tag {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.8em;
+      }
+
+      .organizer-content {
+        padding: 20px;
+      }
+
+      .description {
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .info-list {
+        list-style: none;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        color: #444;
+      }
+
+      .info-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        color: #4a69bd;
+      }
+
+      .events-hosted {
+        background: #e8f0fe;
+        color: #4a69bd;
+        padding: 8px 15px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+
+        .organizers-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Event Organizers</h1>
+        <p>Meet the teams that bring our campus events to life</p>
+      </header>
+
+      <div class="organizers-grid">
+        <!-- Organizer Card 1 -->
+        <div class="organizer-card">
+          <div class="organizer-header">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D560BAQGFc8yFCxFcLQ/company-logo_200_200/company-logo_200_200/0/1733139912841?e=2147483647&v=beta&t=Te-spaBAr2cuq1FMK8-8QvEdmxK4nilP462C8GF0_9M"
+              alt="SAB Logo"
+              class="organizer-logo"
+            />
+            <h2 class="organizer-name">Kalakrit</h2>
+            <div class="expertise-tags">
+              <span class="tag">Dance</span>
+              <span class="tag">Music</span>
+              <span class="tag">Fashion</span>
+            </div>
+          </div>
+          <div class="organizer-content">
+            <span class="events-hosted">45 Events Hosted</span>
+            <p class="description">
+              The Kalakrit Cultural Society at ABESEC is dedicated to promoting
+              cultural activities and nurturing artistic talents among students.
+              The society aims to provide a platform for students to showcase
+              their skills in various cultural fields such as dancing, singing,
+              acting, and more. Kalakrit organizes numerous events throughout
+              the academic year, including cultural nights, dance performances,
+              music concerts, and drama competitions. The society also conducts
+              workshops and training sessions to help students develop their
+              artistic abilities and gain exposure to different forms of
+              cultural expression
+            </p>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-icon">📸</span>
+                <a
+                  href="https://instagram.com/kalakrit.abes"
+                  class="instagram-handle"
+                  >@kalakrit.abes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Organizer Card 2 -->
+        <div class="organizer-card">
+          <div class="organizer-header">
+            <img
+              src="https://abes.ac.in/images/samvad.png"
+              alt="ISA Logo"
+              class="organizer-logo"
+            />
+            <h2 class="organizer-name">Samvaad</h2>
+            <div class="expertise-tags">
+              <span class="tag">Theatre</span>
+              <span class="tag">Art</span>
+              <span class="tag">Culture</span>
+            </div>
+          </div>
+          <div class="organizer-content">
+            <span class="events-hosted">28 Events Hosted</span>
+            <p class="description">
+              The Samvaad Theatre Society is the official theatre and drama
+              society of ABESEC. Founded in 2013. Samvaad organizes numerous
+              events throughout the year, including plays, dance performances,
+              mimicry shows, and more. They also conduct workshops and training
+              sessions to help students hone their acting skills and learn about
+              different aspects of theatre production. The society provides a
+              creative outlet for students to express themselves and develop
+              their talents in a supportive and collaborative environment.
+            </p>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-icon">📸</span>
+                <a
+                  href="https://instagram.com/samvaadwithus"
+                  class="instagram-handle"
+                  >@samvaadwithus</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Organizer Card 3 -->
+        <div class="organizer-card">
+          <div class="organizer-header">
+            <img
+              src="https://geeksforgeeks.zohorecruit.in/recruit/viewCareerImage.do?type=meta&page_id=61093000000211152&file_name=GG_Logo.png"
+              alt="Athletics Logo"
+              class="organizer-logo"
+            />
+            <h2 class="organizer-name">GeeksForGeeks</h2>
+            <div class="expertise-tags">
+              <span class="tag">Explore </span>
+              <span class="tag">learn</span>
+              <span class="tag">Conquer</span>
+            </div>
+          </div>
+          <div class="organizer-content">
+            <span class="events-hosted">62 Events Hosted</span>
+            <p class="description">
+              GeeksforGeeks is a popular online platform for computer science
+              students and professionals to learn and practice coding. It offers
+              a wide range of resources, including tutorials, coding challenges,
+              and interview preparation materials. 
+              At ABES Engineering College, GeeksforGeeks plays a significant
+              role in enhancing the technical knowledge and skills of students.
+              The college's Entrepreneurship Cell often collaborates with
+              GeeksforGeeks to organize events and workshops that help students
+              gain practical experience and stay updated with the latest
+              industry trends
+            </p>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-icon">📸</span>
+                <a
+                  href="https://instagram.com/geeksforgeeks_abesec"
+                  class="instagram-handle"
+                  >@geeksforgeeks_abesec</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
